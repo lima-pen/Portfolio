@@ -1,52 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
-
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-  integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <nav class="navbar">
-        <a href="#" class="logo"><span>Lima.</span></a>
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Studies</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section class="home">
-        <div class="home-info">
-            <h1>Halima Erraji</h1>
-            <h2>I'm a Web Developer</h2>
-            <p>a creative web developer who loves building clean , responsive interfaces and turning ideas into smooth , functional experiences ,mixing a playful vibe with smart problem-solving to carft projects that feel both intuitive and aesthetic. Benvenuto nel mio mondo digital , where code meets creativity .</p>
-            <div class="btn-sci">
-                <a href="#" class="btn">Download CV</a>
-                <div class="sci">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-discord"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="home-img">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="" alt="ME">
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
-</html> -->
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,14 +14,21 @@
 <body>
     <nav class="navbar">
         <a href="#" class="logo"><span>Lima.</span></a>
-        <ul>
-            <!-- Made navbar links functional to toggle sections -->
+        <ul id="nav-links">
+        
             <li class="active"><a href="#home" data-section="home">Home</a></li>
             <li><a href="#about" data-section="about">About</a></li>
             <li><a href="#studies" data-section="studies">Studies</a></li>
             <li><a href="#projects" data-section="projects">Project</a></li>
             <li><a href="#contact" data-section="contact">Contact</a></li>
         </ul>
+
+         <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+            
     </nav>
 
     <section class="home" id="home">
@@ -96,8 +55,7 @@
         </div>
     </section>
 
-    <!-- Updated About/Experience section with flex card layout -->
-    <section class="content-section hidden" id="about">
+    <section class="content-section " id="about">
         <h2 class="section-title">Experience</h2>
         <div class="cards-container">
             <div class="card">
@@ -115,27 +73,156 @@
         </div>
     </section>
 
-    <!-- Updated Studies/Education section with flex card layout -->
-    <section class="content-section hidden" id="studies">
+    <section class="content-section " id="studies">
         <h2 class="section-title">Education</h2>
         <div class="cards-container">
             <div class="card">
                 <h3>Bachelor's Degree in Computer Science</h3>
-                <p class="institution">University Name</p>
-                <p class="date">2020 - 2024</p>
+                <p class="institution">OFPPT ISTA HH1</p>
+                <p class="date">2023 - 2025</p>
                 <p class="description">Focused on web development, software engineering, and database management.</p>
             </div>
             <div class="card">
                 <h3>High School Diploma</h3>
-                <p class="institution">High School Name</p>
-                <p class="date">2017 - 2020</p>
-                <p class="description">Science and Mathematics track with honors.</p>
+                <p class="institution">High School Ibno ElHaytem</p>
+                <p class="date">2023</p>
+                <p class="description">Physics and Chemistry track with honors.</p>
             </div>
         </div>
     </section>
 
-    <!-- Updated Projects section with flex card layout -->
-    <section class="content-section hidden" id="projects">
+   
+    <section class="content-section " id="projects">
+        <h2 class="section-title">Projects</h2>
+     
+        <div class="cards-container">
+            <div class="card">
+                <h3>E-Commerce Website</h3>
+                <p class="tech">React, Node.js, MongoDB</p>
+                <p class="description">A full-stack e-commerce platform with user authentication, product management, and payment integration.</p>
+                <div class="project-links">
+                    <a href="#"><i class="fab fa-github"></i> Code</a>
+                    <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p class="tech">HTML, CSS, JavaScript</p>
+                <p class="description">A responsive portfolio website showcasing my work and skills with smooth animations.</p>
+                <div class="project-links">
+                    <a href="#"><i class="fab fa-github"></i> Code</a>
+                    <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Task Management App</h3>
+                <p class="tech">Vue.js, Firebase</p>
+                <p class="description">A task management application with real-time updates and team collaboration features.</p>
+                <div class="project-links">
+                    <a href="#"><i class="fab fa-github"></i> Code</a>
+                    <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo"><span>Lima.</span></a>
+        
+        <ul class="nav-menu">
+            <li class="active"><a href="#home" data-section="home">Home</a></li>
+            <li><a href="#about" data-section="about">About</a></li>
+            <li><a href="#studies" data-section="studies">Studies</a></li>
+            <li><a href="#projects" data-section="projects">Project</a></li>
+            <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="home-info">
+            <h1>Halima Erraji</h1>
+            <h2>I'm a Web Developer</h2>
+            <p>a creative web developer who loves building clean, responsive interfaces and turning ideas into smooth, functional experiences, mixing a playful vibe with smart problem-solving to craft projects that feel both intuitive and aesthetic. Benvenuto nel mio mondo digital, where code meets creativity.</p>
+            <div class="btn-sci">
+                <a href="#" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="/placeholder.svg?height=400&width=400" alt="ME">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="about">
+        <h2 class="section-title">Experience</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Frontend Developer Intern</h3>
+                <p class="institution">Tech Company Name</p>
+                <p class="date">June 2023 - August 2023</p>
+                <p class="description">Developed responsive web interfaces using React and worked on optimizing website performance.</p>
+            </div>
+            <div class="card">
+                <h3>Freelance Web Developer</h3>
+                <p class="institution">Self-Employed</p>
+                <p class="date">2022 - Present</p>
+                <p class="description">Created custom websites for small businesses and individuals, managing projects from concept to deployment.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="studies">
+        <h2 class="section-title">Education</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>Bachelor's Degree in Computer Science</h3>
+                <p class="institution">OFPPT ISTA HH1</p>
+                <p class="date">2023 - 2025</p>
+                <p class="description">Focused on web development, software engineering, and database management.</p>
+            </div>
+            <div class="card">
+                <h3>High School Diploma</h3>
+                <p class="institution">High School Ibno ElHaytem</p>
+                <p class="date">2023</p>
+                <p class="description">Physics and Chemistry track with honors.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="projects">
         <h2 class="section-title">Projects</h2>
         <div class="cards-container">
             <div class="card">
@@ -168,22 +255,6 @@
         </div>
     </section>
 
-    <!-- Added Contact Section -->
-    <section class="content-section hidden" id="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="content-card">
-            <div class="card-item">
-                <h3>Get In Touch</h3>
-                <p class="description">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> halima.erraji@example.com</p>
-                    <p><i class="fas fa-phone"></i> +123 456 7890</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Your City, Country</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script src="index.js"></script>
+    <script src="html/index.js"></script>
 </body>
 </html>
